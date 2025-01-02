@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="p.css">
+    <link rel="stylesheet" href="m.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav id="pc-nav">
+        <div class="logo">
+            <span class="blue"><b>PORT</b></span>FOLIO
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#profile">HOME</a></li>
+                <li><a href="#projects">PROJECT</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="phone-nav">
+        <div class="logo">
+            <span class="blue"><b>PORT</b></span>FOLIO
+        </div>
+        <div class="phone-menu">
+            <div class="phone-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#profile" onclick="toggleMenu()">HOME</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">PROJECT</a></li>
+                <li><a href="#about" onclick="toggleMenu()">ABOUT</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">CONTACT</a></li>
+
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="pic-container">
+            <img src="prof4.png" alt="gishner profile picture" class="image">
+        </div>
+        <div class="content-container">
+            <div class="text-container">
+                <h1 class="title"><span>Gishner</span></h1>
+                <p>Student|GoalOriented|Hardworking</p>
+            </div>
+            <div class="social-container">
+                <img src="github.png" alt="github" class="icon" onclick="location.href='https://github.com/nerdgx/xxxx.x'">
+                <img src="fb.png" alt="facebook" class="icon" onclick="location.href='https://web.facebook.com/gishner.santianez'">
+                <img src="ig.png" alt="instagram" class="icon" onclick="location.href='https://www.instagram.com/gsnrx_/'">
+                <img src="x.png" alt="twitter" class="icon" onclick="location.href='https://www.instagram.com/gsnrx_/'">
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <header>MY<span>PROJECT</span></header>
+        <div class="project-container">
+            <div class="project1-container">
+                <div class="project-pic1-container">
+                    <img src="tkinter.png" alt="python logo" class="tkinter">
+                </div>
+                <div class="project1-text">
+                    <p class="project1-p">This project is built using Python, It is designed to efficiently manage gym operations, making it easier for gym owners and staff to organize member data, track payments, and monitor gym activities. The user-friendly graphical interface ensures that even non-technical users can interact with the system seamlessly.</p>
+                </div>
+                <div class="butons">
+                <button class="btn1" onclick="window.location.href='https://github.com/nerdgx/python'">View Here!</button>
+                </div>
+            </div>
+            <div class="project2-container">
+                <div class="project-pic2-container">
+                    <img src="hcj.png" alt="javascript logo", class="function">
+                </div>
+                <div class="project2-text">
+                    <p class="project2-p">This project is a basic yet functional calculator built using HTML, CSS, and JavaScript. It replicates the functionality of a standard calculator, allowing users to perform arithmetic operations like addition, subtraction, multiplication, and division. The design is responsive, and the interface is user-friendly</p>
+                </div>
+                <div class="butons">
+                <button class="btn2" onclick="window.location.href='https://github.com/nerdgx/python'">View Here!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <header><span>ABOUT</span>ME</header>
+        <div class="about-container">
+            <div class="details">
+                <p class="about-text">Hi, I’m Gishner Santiañez! I’m a 2nd year student pursuing BSIT at EVSU ORMOC CAMPUS. My passion for coding, web development, design, or programming has led me to explore and build projects that showcase my creativity and problem-solving skills.I have hands-on experience with technologies like HTML, CSS, JavaScript, C, and Python, which I’ve applied to personal projects, including a gym management system, calculator app and a simple portfolio website.</p>
+                <img src="balloon.jpg" alt="" class="balloon">
+            </div>
+
+            <div class="slider">
+                <div class="hdr"><header>HOB<span>BIES</span></header></div>
+                <div class="slides">
+                    <div class="slide">
+                        <img src="c.png" alt="img1">
+                        <div class="slide-text">Sometimes I like coding</div>
+                    </div>
+                    <div class="slide">
+                        <img src="arts.jpg" alt="img2">
+                        <div class="slide-text">I draw occasionally</div>
+                    </div>
+                    <div class="slide">
+                        <img src="anime.jpg" alt="img3">
+                        <div class="slide-text">I watched anime</div>
+                    </div>
+                    <div class="slide">
+                        <img src="tropa.jpg" alt="img4">
+                        <div class="slide-text">Sometimes I hangout with my friends</div>
+                    </div>
+                    <div class="slide">
+                        <img src="sea.jpg" alt="img5">
+                        <div class="slide-text">I go to shore to find peace</div>
+                    </div>
+                    <div class="slide">
+                        <img src="shat.jpg" alt="img6">
+                        <div class="slide-text">Drink sometimes to relieve stress</div>
+                    </div>
+                </div>
+                <button class="prev"moveSlide(-1) onclick="moveSlide(-1)">◀</button>
+                <button class="next" onclick="moveSlide(1)">▶</button>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-container">
+            <header class="hdr-con"><span>GET IN </span>TOUCH</header>
+            <div class="call-container">
+                <div class="sub1-container">
+                    <div class="call">
+                        <div><img src="ca.png" alt=""></div>
+                        <div>
+                            <p class="what">PHONE</p>
+                            <p class="what">+69162323353</p>
+                        </div>
+                    </div>
+                    <div class="location">
+                        <div><img src="loc.png" alt=""></div>
+                        <div>
+                            <p class="what">LOCATION</p>
+                            <p class="what">Brgy. Alta Vista, Ormoc City</p>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <div><img src="em.png" alt=""></div>
+                        <div>
+                            <p class="what">EMAIL</p>
+                            <p class="what">gishner.santianez@evsu.edu.ph</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="message">
+                <div class="last-header"><p class="blacky">Contact Me!</p></div>
+                <div class="last-icon">     
+                    <img src="meow.png" alt="github" class="icons" onclick="location.href='https://github.com/nerdgx/xxxx.x'">
+                    <img src="nigga.png" alt="facebook" class="icons" onclick="location.href='https://web.facebook.com/gishner.santianez'">
+                    <img src="mamba.png" alt="instagram" class="icons" onclick="location.href='https://www.instagram.com/gsnrx_/'">
+                    <img src="birdie.png" alt="twitter" class="icons" onclick="location.href='https://www.instagram.com/gsnrx_/'">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="foot">
+        <p>&copy; 2025 Portfolio. All rights reserved.</p>
+    </footer>
+    <script src="p.js"></script>
+</body>
+</html>
